@@ -37,11 +37,16 @@
 }
 .profile .user_info{
   display: inline-block;
-  top:50%;
   transform: translate(30%,-23%);
 }
 .profile .user_info h2{
     color:red;
+}
+.profile .user_info .btn{
+    width:200px;
+    background: #fff;
+    border:#bfc0c0 solid 1px;
+    font-weight: bold;
 }
 
 
@@ -51,7 +56,6 @@
 
 /*하이라이트*/
 .highlight{
-    border: solid;
     display: flex;
 }
 .highlight .hl_image{
