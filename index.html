@@ -1,28 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
+    <div class="top_bar">
+        <div class="logo">
+            <img src="./image/instalogo.png">
+        </div>
+        <div class="search">
+            <input type="text" placeholder="검색">
+        </div>
+    </div>
+
+    <div class="profile">
+        <img src="./image/profile.jpg">
+        <div class="user_info">
+            <p>half_bottle</p>
+            <button>프로필 편집</button>
+
+        </div>
+    </div>
+    <div class="introduce">
+        <p>
+            <strong>반병현(ByungHyun Ban)</strong><br>
+            작가
+        </p>
+        <a href="https://needleworm.github.io">needleworm.github.io</a><br></p>
+    </div>
     <!--<br>태그는 줄바꿈 기능이있다.-->
 
-    <p>half_bottle</p>
-    <p>프로필 편집</p>
-    <p>
-    <strong>반병현(ByungHyun Ban)</strong><br>
-    작가
-    </p>
-    <a href="needleworm.github.io">needleworm.github.io</a><br></p>
-    <p>
-        게시물<br>
-        팔로워<br>
-        팔로우<br>
-        133<br>
-        408<br>
-        189<br>
-    </p>
-   
+    <div class="highlight">
+        <div class="hl_image">
+            <img src="./image/hl1.jpg">
+            <div class="hl_emoji">
+                <!--window + ;-->
+                😊
+            </div>
+        </div>
+
+        <div class="hl_image">
+            <img src="./image/hl2.jpg">
+            <div class="hl_emoji">
+                😍
+            </div>
+        </div>
+
+    </div>
+
+    <div class="status">
+        <div class="post">
+            <p>게시물</p>
+            <p>133</p>
+        </div>
+        <div class="follower">
+            <p>팔로워</p>
+            <p>408</p>
+        </div>
+        <div class="follow">
+            <p>팔로우</p>
+            <p>189</p>
+        </div>
+    </div>
+    <div>아이콘이 들어갈 자리</div>
+    <!--퍼센트로 지정된 값은 화면 크기에 따라 이미지의 크기가 바뀐다.
+    이처럼 창 크기의 변화에 맞춰 화면의 정보나 사진의 크기가 
+    바뀌는 웹 페이지를 반응형 웹이라고 한다.
+    모든 웹페이지 외주 제작에서 반응형 웹이 가장 비싼 가격으로
+    거래되고 있다. 가장 수요가 높고 난이도가 높기 때문이다
+    -->
+    <div class="thumbnails">
+        <img src="./image/thumbnails/1.jpg">
+        <img src="./image/thumbnails/2.jpg">
+        <img src="./image/thumbnails/3.jpg">
+        <img src="./image/thumbnails/4.jpg">
+        <img src="./image/thumbnails/5.jpg">
+        <img src="./image/thumbnails/6.jpg">
+        <img src="./image/thumbnails/7.jpg">
+        <img src="./image/thumbnails/8.jpg">
+        <img src="./image/thumbnails/9.jpg">
+    </div>
 </body>
+
 </html>

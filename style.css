@@ -1,0 +1,48 @@
+/*상단바*/
+.top_bar{
+    display: flex;
+    align-items: center;
+    background: #57e7d4;
+}
+.top_bar .logo img{
+    width:100px;
+    
+}
+.top_bar .search input{
+    height:15px;
+    text-align: center;
+}
+
+/*프로필*/
+.profile img{
+    width:100px;
+    border-radius: 50%;
+}
+.profile .user_info{
+  display: inline-block;
+  top: 0;
+  transform: translateY(-50%);
+}
+/*소개글*/
+
+/*하이라이트*/
+.highlight{
+    display: flex;
+}
+.highlight .hl_image{
+    text-align: center;
+}
+.highlight .hl_image img{
+    border-radius: 50%;
+    height: 35px;
+   
+}
+/*상태글*/
+.status{
+    display: flex;
+}
+
+/*썸네일*/
+.thumbnails img{
+    width:32%;
+}
