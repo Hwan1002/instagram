@@ -1,39 +1,61 @@
 /*상단바*/
-.top_bar{
-    display: flex;
+.top{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    /* display: flex;
     align-items: center;
-    background: #57e7d4;
-    
+    background: #57e7d4; */
+    border:3px solid red;
 }
 
-.top_bar .logo img{
+.top .logo img{
     width:100px;
     
 }
 
-.top_bar input{
-    border-radius: 3px;
+.top .search{
+    margin: auto;
+    width:95%;
+}
+
+.top input{
+    text-align: center;
+    width:100%;
+    border-radius: 7px;
 }
 
 
-.top_bar .icon{
+.top .icon{
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
-.top_bar .icon img {
+.top .icon img {
     width:100%;
 }
 
 
 /*프로필*/
+.profile{
+    border: 3px solid orange;
+    display: flex;
+}
+.profile .pr_img{
+    margin:auto 0;
+    width:50px;
+    height:50px;
+    border: 1px solid red;
+}
 .profile img{
-    width:100px;
+    width:100%;
+    height:100%;
+    object-fit: cover;
     border-radius: 50%;
 }
 .profile .user_info{
-  display: inline-block;
-  transform: translate(30%,-23%);
+    display: inline-block;
+    margin:auto 0 0 20px;
 }
 .profile .user_info h2{
     color:red;
@@ -47,19 +69,29 @@
 
 
 /*소개글*/
-
+.introduce{
+    border: 3px solid yellow;
+}
 
 
 /*하이라이트*/
 .highlight{
     display: flex;
+    margin-bottom: 30px;
 }
 .highlight .hl_image{
     text-align: center;
+    margin:5px 10px;
+    width:35px;
+    height: 35px;
 }
 .highlight .hl_image img{
+    border:1px solid white;
     border-radius: 50%;
-    height: 35px;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+
    
 }
 
@@ -68,7 +100,10 @@
 .status{
     display: flex;
     justify-content: space-around;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
 }
+
 .status div{text-align: center;}
 /* .status .follower{
     margin:0 100px;
@@ -76,6 +111,11 @@
 
 
 /*썸네일*/
+.thumbnails{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 3px solid skyblue;
+}
 .thumbnails img{
-    width:32%;
+    width:100%;
 }
