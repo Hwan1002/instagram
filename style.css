@@ -1,15 +1,20 @@
+body{
+    background-color: #ecf0f0ad;
+}
 /*상단바*/
 .top{
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-columns: 1fr 1.5fr 3fr;
     /* display: flex;
     align-items: center;
     background: #57e7d4; */
-    border:3px solid red;
 }
-
-.top .logo img{
+.top .logo{
     width:100px;
+    object-fit: contain;
+}
+.top .logo img{
+    width:100%;
     
 }
 
@@ -27,10 +32,11 @@
 
 .top .icon{
     display: flex;
-    justify-content: space-around;
     align-items: center;
 }
-
+.top .icon div{
+    margin:auto 15px;
+}
 .top .icon img {
     width:100%;
 }
@@ -38,7 +44,6 @@
 
 /*프로필*/
 .profile{
-    border: 3px solid orange;
     display: flex;
 }
 .profile .pr_img{
@@ -65,12 +70,12 @@
     background: #fff;
     border:#bfc0c0 solid 1px;
     font-weight: bold;
+    border-radius: 5px;
 }
 
 
 /*소개글*/
 .introduce{
-    border: 3px solid yellow;
 }
 
 
