@@ -1,152 +1,157 @@
-body{
-    background-color: #ecf0f0ad;
+body {
+    font-size: 3vw;
 }
-p{margin:0;}
+
 /*상단바*/
-.top{
-    display: grid;
-    grid-template-columns: 4fr 7fr 4fr;
-    border-bottom: 0.1px solid gray;
-    margin-bottom: 10px;
-    height:10vw;
-    min-height:3vw;
-    margin-bottom: 3vw;
- 
-}
-.top div{
-    text-align: center;
-    padding-top: 1vw;
-}
-.top .logo{
-    width:20vw;
-    height:10vw;
-    margin: auto;
-   
-}
-.top .logo img{
-    width:100%;
-    object-fit: cover;
-    
-}
-.top .search{
-    height:30px;
-    margin: auto 0;
-}
-.top .search input{
-    width:95%;
-    height:60%;
-    border-radius: 7px;
-    border: 1px solid gray;
-    margin: auto;
-    text-align: center;
-    font-size: 10px;
-    font-weight: 100;
-}
-
-.top .icon{
-    display: grid;
-    grid-template-columns: 30px 30px 30px 30px;
-    align-items: center;
-}
-.top .icon div{
-    margin:auto 15px;
-}
-.top .icon i{
-
-    color: gray;
-    width:100%;
-}
-
-
-/*프로필*/
-.profile{
-    display: grid;
-    grid-template-columns: 1fr 3.5fr;
-}
-.profile .pr_img{
-    margin:auto 0;
-    width:10vw;
-    height:10vw;
-}
-.profile img{
-    width:100%;
-    height:100%;
-    object-fit: cover;
-    border-radius: 50%;
-}
-.profile .user_info{
-    margin: auto 0;
-    height:15vw;
-}
-.profile .user_info #id{
-    font-size: 6vw;
-    font-weight: 100;
-    color: gray;
-    margin: 0;
-}
-.profile .user_info .btn{
-    background: #fff;
-    width:65%;
-    border:#bfc0c0 solid 1px;
-    border-radius: 3px;
-}
-
-
-/*소개글*/
-.introduce{
-}
-
-
-/*하이라이트*/
-.highlight{
-    display: grid;
-    grid-template-columns: 12vw 12vw 1fr;
-    margin-bottom: 30px;
-    text-align: center;
-
-}
-.highlight .hl_image{
-    margin:5px 10px;
-    width:10vw;
+#top {
+    display:grid;
+    grid-template-columns: 4fr 7fr 5fr;
     height: 10vw;
+    min-height: 40px;
+
+    border-bottom: solid gray 0.1px;
+    margin-bottom: 3vw;
 }
-.highlight .hl_image img{
-    border:1px solid white;
-    border-radius: 50%;
-    width:100%;
+
+#top img {
+    margin-left: auto;
+    margin-right: auto;
+
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+
 }
 
+#top input {
+    height: 60%;
+    width: 95%;
 
-/*상태글*/
-.status{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
-}
-.status div{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+
     text-align: center;
+    background-color: rgb(250, 250, 250);
+
+    border: solid gray 1px;
+    border-radius: 5px;
+
+    font-size: 3vw;
+    font-weight: 100;
+}
+/*아이콘*/
+i {
+    color:gray;
 }
 
-/*서브아이콘*/
-#sub_icons{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    text-align: center;
-    font-size: 15px;
-    height: 30px;
-}
-#sub_icons #selected{
-    border-bottom: 1px solid #000000;    
+
+#top i {
+    font-size: 4vw;
 }
 
 /*썸네일*/
-.thumbnails{
-    display: grid;
+.thumnail_grid {
+    display:grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-.thumbnails img{
-    width:100%;
+
+.thumnail {
+    width: 100%;
+} 
+
+
+
+
+/*프로필*/
+.circle_pic {
+    border: solid white 1px;
+    border-radius: 50%;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#profile {
+    display: grid;
+    grid-template-columns: 1fr 3.5fr;
+}
+
+#profile_info{
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+
+    height: 15vw;
+}
+#profile_pic {
+    width: 15vw;
+    height: 15vw;
+}
+/*하이라이트*/
+.highlight_pic {
+    width: 10vw;
+    height: 10vw;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#highlight_area {
+    display: grid;
+    grid-template-columns: 12vw 12vw 1fr;
+}
+
+.highlight {
+    text-align: center;
+}
+/*상태글*/
+
+.stat {
+    text-align:center;
+}
+
+#stat_bar {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    border-top: 0.1px solid gray;
+    border-bottom: 0.1px solid gray;
+
+    margin-bottom:5px;
+    margin-top:5px;
+}
+
+#id {
+    font-size: 6vw;
+    font-weight: 100;
+}
+
+button {
+    height: 80%;
+    width: 95%;
+
+    font-size:3vw;
+    background-color: white;
+    border: solid gray 1px;
+    border-radius: 5px;
+}
+
+
+#top div {
+    text-align:center;
+    padding-top:3vw;
+}
+
+#sub_icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    text-align: center;
+    font-size: 5vw;
+    
+    height: 8vw;
+}
+
+.selected{
+    border-bottom: solid gray 3px;
 }
